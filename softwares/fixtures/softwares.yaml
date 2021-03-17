@@ -1,0 +1,328 @@
+- model: softwares.SoftwareArchitecture
+  fields:
+    name: "32 Bit"
+- model: softwares.SoftwareArchitecture
+  fields:
+    name: "64 Bit"
+
+-
+  model: softwares.SoftwareCategory
+  fields:
+    name: Office
+-
+  model: softwares.SoftwareCategory
+  fields:
+    name: Backup
+-
+  model: softwares.SoftwareCategory
+  fields:
+    name: Anti-Virus
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2010 Student'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2010 Pro'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2010 Enterprise'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2013 Student'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2013 Pro'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2013 Enterprise'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2016 Home & Business'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2016 Pro'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2016 Enterprise'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 365'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2013 Home & Business'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2010 Home & Business'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: '2007 Microsoft Office System'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2007 Standard'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: 'Office 2019 Home & Business'
+    category: '1'
+-
+  model: softwares.Software
+  fields:
+    name: Veeam
+    category: '2'
+-
+  model: softwares.Software
+  fields:
+    name: 'Backup Exec'
+    category: '2'
+-
+  model: softwares.Software
+  fields:
+    name: Acronis
+    category: '2'
+-
+  model: softwares.Software
+  fields:
+    name: 'Hyper Backup'
+    category: '2'
+-
+  model: softwares.Software
+  fields:
+    name: 'Bit Defender'
+    category: '3'
+-
+  model: softwares.Software
+  fields:
+    name: 'Panda Cloud Pro'
+    category: '3'
+-
+  model: softwares.Software
+  fields:
+    name: 'Panda Cloud Pro Plus'
+    category: '3'
+-
+  model: softwares.Software
+  fields:
+    name: 'Windows Defender'
+    category: '3'
+-
+  model: softwares.Software
+  fields:
+    name: 'Microsoft Security Essentials'
+    category: '3'
+-
+  model: softwares.Software
+  fields:
+    name: 'Panda Antivirus Pro'
+    category: '3'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows XP'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 7 Home'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 7 Pro'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 7 Enterprise'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 8 Home'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 8 Pro'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 8 Enterprise'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 8.1 Home'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 8.1 Pro'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 8.1 Enterprise'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 10 Home'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 10 Pro'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: FreeBSD
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'VMware ESXi 6.5.0'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 10 Enterprise'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows Server 2003'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows Server 2008'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows Server 2012'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows Server 2012 R2'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows Server 2016'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Ubuntu 14.04'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Ubuntu 16.04'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'VMware ESXi 6.0.0'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'pfsense 2.4.x'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'VMware vCenter Server Appliance 6.0.0'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 4.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 5.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 6.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 7.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 8.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 9.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 10.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'iOS 11.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 4.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 5.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 6.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 7.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 8.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 9.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 10.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'tvOS 11.X'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'VMware ESXi 5.5.0'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'VMware vCenter Server Appliance 6.5.0'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows Storage Server 2016 Standard'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Windows 7 Home Premium'
+-
+  model: softwares.OperatingSystem
+  fields:
+    name: 'Ubuntu 18.04'

@@ -1,0 +1,13 @@
+wheel
+Django==3.1.4
+djangorestframework
+djangorestframework-simplejwt
+pyaml
+pytz
+django-guardian
+django-nested-admin
+pytest
+pytest-django
+pytest-cov
+pytest-xdist
+mixer

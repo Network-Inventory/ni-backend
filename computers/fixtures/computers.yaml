@@ -1,0 +1,157 @@
+- model: computers.CpuManufacturer
+  fields:
+    name: Intel
+- model: computers.CpuManufacturer
+  fields:
+    name: AMD
+- model: computers.CpuArchitecture
+  fields:
+    name: x86_64
+- model: computers.CpuArchitecture
+  fields:
+    name: i686
+- model: computers.CpuArchitecture
+  fields:
+    name: ARM
+- model: computers.CpuArchitecture
+  fields:
+    name: ARM64
+
+- model: computers.GpuManufacturer
+  fields:
+    name: Intel
+- model: computers.GpuManufacturer
+  fields:
+    name: AMD
+- model: computers.GpuManufacturer
+  fields:
+    name: Nvidia
+
+- model: computers.RamType
+  fields:
+    name: unkown
+- model: computers.RamType
+  fields:
+    name: DDR2
+- model: computers.RamType
+  fields:
+    name: DDR3
+- model: computers.RamType
+  fields:
+    name: DDR4
+
+- model: computers.DiskType
+  fields:
+    name: SSD
+- model: computers.DiskType
+  fields:
+    name: HDD
+- model: computers.DiskType
+  fields:
+    name: SAS
+
+- model: computers.Cpu
+  fields:
+    name: Generic Intel CPU
+    manufacturer: 1
+    hyper_threading: 0
+
+- model: computers.Cpu
+  fields:
+    name: Generic AMD CPU
+    manufacturer: 2
+    hyper_threading: 0
+
+- model: computers.RaidType
+  fields:
+    name: "RAID 0"
+- model: computers.RaidType
+  fields:
+    name: "RAID 1"
+- model: computers.RaidType
+  fields:
+    name: "RAID 5"
+- model: computers.RaidType
+  fields:
+    name: "RAID 6"
+- model: computers.RaidType
+  fields:
+    name: "RAID 10"
+- model: computers.RaidType
+  fields:
+    name: "RAID 50"
+- model: computers.RaidType
+  fields:
+    name: "RAID 60"
+
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 1
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 2
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 4
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 8
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 16
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 24
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 32
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 64
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 96
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 128
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 256
+    ecc: False
+-
+  model: computers.Ram
+  fields:
+    ram_type: 1
+    size_in_gb: 512
+    ecc: False
