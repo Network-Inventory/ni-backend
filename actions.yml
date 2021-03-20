@@ -1,5 +1,0 @@
-name: 'Build Backend'
-description: 'Builds the Docker conatiner for the backend.'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
