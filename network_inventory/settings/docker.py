@@ -19,10 +19,10 @@ DEBUG = os.environ.get('DJANGO_DEBUG')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': os.environ.get('POSTGRES_DB'),
         'USER': 'postgres',
         'HOST': 'db',
         'PORT': 5432,
-        'PASSWORD': 'password',
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
     }
 }
