@@ -1,11 +1,9 @@
 #!/bin/bash
 if [ -f /var/cache/network_inventory/.second_run ]; then
     sleep 2
-    python manage.py collectstatic --noinput
     python manage.py makemigrations
     python manage.py migrate
 else
-    python manage.py collectstatic --noinput
     python manage.py makemigrations backups
     python manage.py makemigrations computers
     python manage.py makemigrations core
