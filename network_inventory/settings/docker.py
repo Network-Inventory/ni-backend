@@ -1,12 +1,14 @@
 from .base import *
 
-base_url = os.environ.get('BASE_URL')
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'backend',
-    base_url
 ]
+
+base_url = os.environ.get('NI_BASE_URL')
+if base_url:
+    ALLOWED_HOSTS.append(base_url)
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
