@@ -1,10 +1,11 @@
 from .base import *
 
+base_url = os.environ.get('BASE_URL')
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     'backend',
-    os.environ.get('BASE_URL')
+    base_url
 ]
 
 
