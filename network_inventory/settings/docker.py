@@ -6,15 +6,17 @@ ALLOWED_HOSTS = [
     'backend',
 ]
 
-base_url = os.environ.get('NI_BASE_URL')
-if base_url:
-    ALLOWED_HOSTS.append(base_url)
+ni_host = os.environ.get('NI_HOST')
+if ni_host:
+    ALLOWED_HOSTS.append(ni_host)
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
-DEBUG = os.environ.get('DJANGO_DEBUG')
+DEBUG = False
+if os.environ.get('NI_MODE') == "development":
+    DEBUG = True
 
 DATABASES = {
     'default': {
