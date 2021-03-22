@@ -14,9 +14,7 @@ if ni_host:
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
-DEBUG = False
-if os.environ.get('NI_MODE') == "development":
-    DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG')
 
 DATABASES = {
     'default': {
