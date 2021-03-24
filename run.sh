@@ -10,5 +10,4 @@ if $(python manage.py shell -c "from django.contrib.auth import get_user_model; 
     python manage.py loaddata nets
     python manage.py loaddata softwares
 fi
-find . \( -name __pycache__ -o -name "*.pyc" \) -delete
 gunicorn network_inventory.wsgi:application --reload --bind 0.0.0.0:8000 --workers 3
