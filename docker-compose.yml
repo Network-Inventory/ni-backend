@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=network_inventory
+      - POSTGRES_PASSWORD=password
+
+  backend:
+    build: .
+    environment:
+      - DJANGO_SETTINGS_MODULE=network_inventory.settings.docker
+      - DJANGO_SECRET_KEY=foo
+      - NI_MODE=development
+      - POSTGRES_DB=network_inventory
+      - POSTGRES_PASSWORD=password
+    depends_on:
+      - db
+    ports:
+      - 80:8000
