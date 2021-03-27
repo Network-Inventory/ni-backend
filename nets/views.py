@@ -14,7 +14,7 @@ class IpStatusViewSet(viewsets.ModelViewSet):
     """
     queryset = IpStatus.objects.all()
     serializer_class = IpStatusSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class NetViewSet(viewsets.ModelViewSet):
@@ -23,4 +23,4 @@ class NetViewSet(viewsets.ModelViewSet):
     """
     queryset = Net.objects.all()
     serializer_class = NetSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

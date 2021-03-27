@@ -18,7 +18,7 @@ class OperatingSystemViewSet(viewsets.ModelViewSet):
     """
     queryset = OperatingSystem.objects.all()
     serializer_class = OperatingSystemSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class SoftwareArchitectureViewSet(viewsets.ModelViewSet):
@@ -27,7 +27,7 @@ class SoftwareArchitectureViewSet(viewsets.ModelViewSet):
     """
     queryset = SoftwareArchitecture.objects.all()
     serializer_class = SoftwareArchitectureSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class SoftwareCategoryViewSet(viewsets.ModelViewSet):
@@ -36,7 +36,7 @@ class SoftwareCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = SoftwareCategory.objects.all()
     serializer_class = SoftwareCategorySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class SoftwareViewSet(viewsets.ModelViewSet):
@@ -45,7 +45,7 @@ class SoftwareViewSet(viewsets.ModelViewSet):
     """
     queryset = Software.objects.all()
     serializer_class = SoftwareSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 

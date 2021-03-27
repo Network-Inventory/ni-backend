@@ -20,7 +20,7 @@ class WeekdayViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = Weekday.objects.all()
     serializer_class = WeekdaySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class MonthViewSet(viewsets.ReadOnlyModelViewSet):
@@ -29,7 +29,7 @@ class MonthViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = Month.objects.all()
     serializer_class = MonthSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DayOfMonthViewSet(viewsets.ReadOnlyModelViewSet):
@@ -38,7 +38,7 @@ class DayOfMonthViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = DayOfMonth.objects.all()
     serializer_class = DayOfMonthSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class HoursInDayViewSet(viewsets.ReadOnlyModelViewSet):
@@ -47,7 +47,7 @@ class HoursInDayViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = HoursInDay.objects.all()
     serializer_class = HoursInDaySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class MinutesInHourViewSet(viewsets.ReadOnlyModelViewSet):
@@ -56,4 +56,4 @@ class MinutesInHourViewSet(viewsets.ReadOnlyModelViewSet):
     """
     queryset = MinutesInHour.objects.all()
     serializer_class = MinutesInHourSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

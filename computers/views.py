@@ -46,7 +46,7 @@ class ComputerViewSet(viewsets.ModelViewSet):
     """
     queryset = Computer.objects.all().order_by('name')
     serializer_class = ComputerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class ComputerCpuRelationViewSet(viewsets.ModelViewSet):
@@ -55,7 +55,7 @@ class ComputerCpuRelationViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerCpuRelation.objects.all().order_by('computer')
     serializer_class = ComputerCpuRelationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class ComputerDiskRelationViewSet(viewsets.ModelViewSet):
@@ -64,7 +64,7 @@ class ComputerDiskRelationViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerDiskRelation.objects.all().order_by('computer')
     serializer_class = ComputerDiskRelationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class ComputerGpuRelationViewSet(viewsets.ModelViewSet):
@@ -73,7 +73,7 @@ class ComputerGpuRelationViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerGpuRelation.objects.all().order_by('computer')
     serializer_class = ComputerGpuRelationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class ComputerRamRelationViewSet(viewsets.ModelViewSet):
@@ -82,7 +82,7 @@ class ComputerRamRelationViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerRamRelation.objects.all().order_by('computer')
     serializer_class = ComputerRamRelationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class ComputerSoftwareRelationViewSet(viewsets.ModelViewSet):
@@ -91,7 +91,7 @@ class ComputerSoftwareRelationViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerSoftwareRelation.objects.all().order_by('computer')
     serializer_class = ComputerSoftwareRelationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class CpuArchitectureViewSet(viewsets.ModelViewSet):
@@ -100,7 +100,7 @@ class CpuArchitectureViewSet(viewsets.ModelViewSet):
     """
     queryset = CpuArchitecture.objects.all().order_by('name')
     serializer_class = CpuArchitectureSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class CpuManufacturerViewSet(viewsets.ModelViewSet):
@@ -109,7 +109,7 @@ class CpuManufacturerViewSet(viewsets.ModelViewSet):
     """
     queryset = CpuManufacturer.objects.all().order_by('name')
     serializer_class = CpuManufacturerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class CpuViewSet(viewsets.ModelViewSet):
@@ -118,7 +118,7 @@ class CpuViewSet(viewsets.ModelViewSet):
     """
     queryset = Cpu.objects.all().order_by('name')
     serializer_class = CpuSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DiskTypeViewSet(viewsets.ModelViewSet):
@@ -127,7 +127,7 @@ class DiskTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = DiskType.objects.all()
     serializer_class = DiskTypeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DiskViewSet(viewsets.ModelViewSet):
@@ -136,7 +136,7 @@ class DiskViewSet(viewsets.ModelViewSet):
     """
     queryset = Disk.objects.all().order_by('computer')
     serializer_class = DiskSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class GpuManufacturerViewSet(viewsets.ModelViewSet):
@@ -145,7 +145,7 @@ class GpuManufacturerViewSet(viewsets.ModelViewSet):
     """
     queryset = GpuManufacturer.objects.all().order_by('name')
     serializer_class = GpuManufacturerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class GpuViewSet(viewsets.ModelViewSet):
@@ -154,7 +154,7 @@ class GpuViewSet(viewsets.ModelViewSet):
     """
     queryset = Gpu.objects.all().order_by('name')
     serializer_class = GpuSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DisksInRaidViewSet(viewsets.ModelViewSet):
@@ -163,7 +163,7 @@ class DisksInRaidViewSet(viewsets.ModelViewSet):
     """
     queryset = DisksInRaid.objects.all().order_by('raid')
     serializer_class = DisksInRaidSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class RaidTypeViewSet(viewsets.ModelViewSet):
@@ -172,7 +172,7 @@ class RaidTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = RaidType.objects.all().order_by('name')
     serializer_class = RaidTypeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class RaidViewSet(viewsets.ModelViewSet):
@@ -181,7 +181,7 @@ class RaidViewSet(viewsets.ModelViewSet):
     """
     queryset = Raid.objects.all().order_by('computer')
     serializer_class = RaidSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class RamTypeViewSet(viewsets.ModelViewSet):
@@ -190,7 +190,7 @@ class RamTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = RamType.objects.all().order_by('name')
     serializer_class = RamTypeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class RamViewSet(viewsets.ModelViewSet):
@@ -199,4 +199,4 @@ class RamViewSet(viewsets.ModelViewSet):
     """
     queryset = Ram.objects.all().order_by('computer')
     serializer_class = RamSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

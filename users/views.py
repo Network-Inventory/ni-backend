@@ -22,7 +22,7 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class UserInAdGroupViewSet(viewsets.ModelViewSet):
@@ -31,7 +31,7 @@ class UserInAdGroupViewSet(viewsets.ModelViewSet):
     """
     queryset = UserInAdGroup.objects.all()
     serializer_class = UserInAdGroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class UserInMailGroupViewSet(viewsets.ModelViewSet):
@@ -40,7 +40,7 @@ class UserInMailGroupViewSet(viewsets.ModelViewSet):
     """
     queryset = UserInMailGroup.objects.all()
     serializer_class = UserInMailGroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class AdGroupViewSet(viewsets.ModelViewSet):
@@ -49,7 +49,7 @@ class AdGroupViewSet(viewsets.ModelViewSet):
     """
     queryset = AdGroup.objects.all()
     serializer_class = AdGroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class MailGroupViewSet(viewsets.ModelViewSet):
@@ -58,7 +58,7 @@ class MailGroupViewSet(viewsets.ModelViewSet):
     """
     queryset = MailGroup.objects.all()
     serializer_class = MailGroupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class MailAliasViewSet(viewsets.ModelViewSet):
@@ -67,4 +67,4 @@ class MailAliasViewSet(viewsets.ModelViewSet):
     """
     queryset = MailAlias.objects.all()
     serializer_class = MailAliasSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

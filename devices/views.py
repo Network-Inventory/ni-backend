@@ -24,7 +24,7 @@ class WarrantyViewSet(viewsets.ModelViewSet):
     """
     queryset = Warranty.objects.all()
     serializer_class = WarrantySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class WarrantyTypeViewSet(viewsets.ModelViewSet):
@@ -33,7 +33,7 @@ class WarrantyTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = WarrantyType.objects.all()
     serializer_class = WarrantyTypeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DeviceViewSet(viewsets.ModelViewSet):
@@ -42,7 +42,7 @@ class DeviceViewSet(viewsets.ModelViewSet):
     """
     queryset = Device.objects.all().order_by('name')
     serializer_class = DeviceSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DeviceCategoryViewSet(viewsets.ModelViewSet):
@@ -51,7 +51,7 @@ class DeviceCategoryViewSet(viewsets.ModelViewSet):
     """
     queryset = DeviceCategory.objects.all()
     serializer_class = DeviceCategorySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DeviceInNetViewSet(viewsets.ModelViewSet):
@@ -60,7 +60,7 @@ class DeviceInNetViewSet(viewsets.ModelViewSet):
     """
     queryset = DeviceInNet.objects.all()
     serializer_class = DeviceInNetSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class DeviceManufacturerViewSet(viewsets.ModelViewSet):
@@ -69,7 +69,7 @@ class DeviceManufacturerViewSet(viewsets.ModelViewSet):
     """
     queryset = DeviceManufacturer.objects.all()
     serializer_class = DeviceManufacturerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class HardwareModelViewSet(viewsets.ModelViewSet):
@@ -78,4 +78,4 @@ class HardwareModelViewSet(viewsets.ModelViewSet):
     """
     queryset = HardwareModel.objects.all()
     serializer_class = HardwareModelSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

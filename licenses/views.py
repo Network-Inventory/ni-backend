@@ -18,7 +18,7 @@ class UserLicenseViewSet(viewsets.ModelViewSet):
     """
     queryset = UserLicense.objects.all()
     serializer_class = UserLicenseSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class ComputerLicenseViewSet(viewsets.ModelViewSet):
@@ -27,7 +27,7 @@ class ComputerLicenseViewSet(viewsets.ModelViewSet):
     """
     queryset = ComputerLicense.objects.all()
     serializer_class = ComputerLicenseSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class LicenseWithUserViewSet(viewsets.ModelViewSet):
@@ -36,7 +36,7 @@ class LicenseWithUserViewSet(viewsets.ModelViewSet):
     """
     queryset = LicenseWithUser.objects.all().order_by('user')
     serializer_class = LicenseWithUserSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class LicenseWithComputerViewSet(viewsets.ModelViewSet):
@@ -45,4 +45,4 @@ class LicenseWithComputerViewSet(viewsets.ModelViewSet):
     """
     queryset = LicenseWithComputer.objects.all().order_by('computer')
     serializer_class = LicenseWithComputerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

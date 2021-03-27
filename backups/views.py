@@ -22,7 +22,7 @@ class BackupMethodViewSet(viewsets.ModelViewSet):
     """
     queryset = BackupMethod.objects.all()
     serializer_class = BackupMethodSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class BackupViewSet(viewsets.ModelViewSet):
@@ -31,7 +31,7 @@ class BackupViewSet(viewsets.ModelViewSet):
     """
     queryset = Backup.objects.all().order_by('name')
     serializer_class = BackupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class TargetDeviceViewSet(viewsets.ModelViewSet):
@@ -40,7 +40,7 @@ class TargetDeviceViewSet(viewsets.ModelViewSet):
     """
     queryset = TargetDevice.objects.all().order_by('device')
     serializer_class = TargetDeviceSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class NotificationFromBackupViewSet(viewsets.ModelViewSet):
@@ -49,7 +49,7 @@ class NotificationFromBackupViewSet(viewsets.ModelViewSet):
     """
     queryset = NotificationFromBackup.objects.all().order_by('backup')
     serializer_class = NotificationFromBackupSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class NotificationViewSet(viewsets.ModelViewSet):
@@ -58,7 +58,7 @@ class NotificationViewSet(viewsets.ModelViewSet):
     """
     queryset = Notification.objects.all()
     serializer_class = NotificationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class NotificationTypeViewSet(viewsets.ModelViewSet):
@@ -67,4 +67,4 @@ class NotificationTypeViewSet(viewsets.ModelViewSet):
     """
     queryset = NotificationType.objects.all().order_by('name')
     serializer_class = NotificationTypeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]

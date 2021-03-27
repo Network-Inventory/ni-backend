@@ -18,7 +18,7 @@ class OwnerViewSet(viewsets.ModelViewSet):
     """
     queryset = Owner.objects.all()
     serializer_class = OwnerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class CustomerViewSet(viewsets.ModelViewSet):
@@ -36,7 +36,7 @@ class DeviceManufacturerViewSet(viewsets.ModelViewSet):
     """
     queryset = DeviceManufacturer.objects.all()
     serializer_class = DeviceManufacturerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
 
 class LocationViewSet(viewsets.ModelViewSet):
@@ -45,4 +45,4 @@ class LocationViewSet(viewsets.ModelViewSet):
     """
     queryset = Location.objects.all().order_by('name')
     serializer_class = LocationSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
