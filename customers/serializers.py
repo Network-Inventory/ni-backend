@@ -15,7 +15,8 @@ class OwnerSerializer(serializers.HyperlinkedModelSerializer):
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class DeviceManufacturerSerializer(serializers.HyperlinkedModelSerializer):
