@@ -10,28 +10,33 @@ from .models import MinutesInHour
 class WeekdaySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Weekday
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class MonthSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Month
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class DayOfMonthSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DayOfMonth
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class HoursInDaySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = HoursInDay
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class MinutesInHourSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MinutesInHour
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])

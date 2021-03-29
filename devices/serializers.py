@@ -12,40 +12,47 @@ from .models import HardwareModel
 class WarrantySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Warranty
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class WarrantyTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = WarrantyType
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class DeviceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Device
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class DeviceCategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DeviceCategory
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class DeviceInNetSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DeviceInNet
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class DeviceManufacturerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DeviceManufacturer
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class HardwareModelSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = HardwareModel
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])

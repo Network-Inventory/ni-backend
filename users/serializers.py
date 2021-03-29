@@ -11,37 +11,43 @@ from .models import MailAlias
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class UserInAdGroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = UserInAdGroup
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class UserInMailGroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = UserInMailGroup
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class AdGroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = AdGroup
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class MailGroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MailGroup
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 class MailAliasSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MailAlias
-        fields = '__all__'
+        fields = [field.name for field in model._meta.fields]
+        fields.extend(['id', 'url'])
 
 
 
