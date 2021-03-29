@@ -7,12 +7,10 @@ from .models import Net
 class IpStatusSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = IpStatus
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class NetSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Net
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'

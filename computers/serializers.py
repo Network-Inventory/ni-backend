@@ -23,124 +23,106 @@ from .models import Ram
 class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Computer
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class ComputerCpuRelationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ComputerCpuRelation
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class ComputerDiskRelationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ComputerDiskRelation
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class ComputerGpuRelationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ComputerGpuRelation
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class ComputerRamRelationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ComputerRamRelation
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class ComputerSoftwareRelationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ComputerSoftwareRelation
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class CpuArchitectureSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = CpuArchitecture
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class CpuManufacturerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = CpuManufacturer
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class CpuSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Cpu
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class DiskTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DiskType
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class DiskSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Disk
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class GpuManufacturerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = GpuManufacturer
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class GpuSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Gpu
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class DisksInRaidSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DisksInRaid
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class RaidTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = RaidType
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class RaidSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Raid
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class RamTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = RamType
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class RamSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Ram
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'

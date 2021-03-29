@@ -9,26 +9,22 @@ from .models import Software
 class OperatingSystemSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = OperatingSystem
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class SoftwareArchitectureSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = SoftwareArchitecture
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class SoftwareCategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = SoftwareCategory
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class SoftwareSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Software
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'

@@ -9,8 +9,7 @@ from .models import Location
 class OwnerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Owner
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class CustomerSerializer(serializers.HyperlinkedModelSerializer):
@@ -23,12 +22,10 @@ class CustomerSerializer(serializers.HyperlinkedModelSerializer):
 class DeviceManufacturerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DeviceManufacturer
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class LocationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Location
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'

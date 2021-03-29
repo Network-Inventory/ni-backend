@@ -9,26 +9,22 @@ from .models import LicenseWithComputer
 class UserLicenseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = UserLicense
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class ComputerLicenseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ComputerLicense
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class LicenseWithUserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = LicenseWithUser
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class LicenseWithComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = LicenseWithComputer
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'

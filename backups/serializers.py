@@ -11,40 +11,34 @@ from .models import NotificationType
 class BackupMethodSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = BackupMethod
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class BackupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Backup
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class TargetDeviceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = TargetDevice
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class NotificationFromBackupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = NotificationFromBackup
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class NotificationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Notification
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
 
 
 class NotificationTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = NotificationType
-        fields = [field.name for field in model._meta.fields]
-        fields.extend(['id', 'url'])
+        fields = '__all__'
