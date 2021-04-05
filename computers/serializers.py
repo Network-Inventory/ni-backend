@@ -24,6 +24,7 @@ class ComputerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Computer
         fields = '__all__'
+        depth = 1
 
 
 class ComputerCpuRelationSerializer(serializers.HyperlinkedModelSerializer):
