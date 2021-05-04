@@ -3,7 +3,7 @@ from rest_framework import routers
 from . import views
 
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'months', views.MonthViewSet)
 router.register(r'weekdays', views.WeekdayViewSet)
 router.register(r'days-of-month', views.DayOfMonthViewSet)

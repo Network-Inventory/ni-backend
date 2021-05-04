@@ -3,7 +3,7 @@ from rest_framework import routers
 from . import views
 
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'computers', views.ComputerViewSet)
 router.register(r'computer-cpu-relations', views.ComputerCpuRelationViewSet)
 router.register(r'computer-disk-relations', views.ComputerDiskRelationViewSet)
