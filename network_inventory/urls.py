@@ -35,7 +35,7 @@ from softwares.urls import router as softwares_router
 from users.urls import router as users_router
 
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.registry.extend(backups_router.registry)
 router.registry.extend(computers_router.registry)
 router.registry.extend(core_router.registry)

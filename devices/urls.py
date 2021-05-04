@@ -2,7 +2,7 @@ from rest_framework import routers
 
 from . import views
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'warranties', views.WarrantyViewSet)
 router.register(r'warranty-types', views.WarrantyTypeViewSet)
 router.register(r'devices', views.DeviceViewSet)

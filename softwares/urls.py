@@ -2,7 +2,7 @@ from rest_framework import routers
 
 from . import views
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'operating-systems', views.OperatingSystemViewSet)
 router.register(r'software-architectures', views.SoftwareArchitectureViewSet)
 router.register(r'software-categories', views.SoftwareCategoryViewSet)

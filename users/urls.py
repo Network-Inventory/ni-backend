@@ -2,7 +2,7 @@ from rest_framework import routers
 
 from . import views
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', views.UserViewSet)
 router.register(r'users-in-ad-group', views.UserInAdGroupViewSet)
 router.register(r'users-in-mail-group', views.UserInMailGroupViewSet)
