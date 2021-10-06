@@ -6,25 +6,25 @@ from .models import SoftwareCategory
 from .models import Software
 
 
-class OperatingSystemSerializer(serializers.HyperlinkedModelSerializer):
+class OperatingSystemSerializer(serializers.ModelSerializer):
     class Meta:
         model = OperatingSystem
         fields = '__all__'
 
 
-class SoftwareArchitectureSerializer(serializers.HyperlinkedModelSerializer):
+class SoftwareArchitectureSerializer(serializers.ModelSerializer):
     class Meta:
         model = SoftwareArchitecture
         fields = '__all__'
 
 
-class SoftwareCategorySerializer(serializers.HyperlinkedModelSerializer):
+class SoftwareCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = SoftwareCategory
         fields = '__all__'
 
 
-class SoftwareSerializer(serializers.HyperlinkedModelSerializer):
+class SoftwareSerializer(serializers.ModelSerializer):
     class Meta:
         model = Software
         fields = '__all__'

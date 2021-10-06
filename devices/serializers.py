@@ -9,43 +9,43 @@ from .models import DeviceManufacturer
 from .models import HardwareModel
 
 
-class WarrantySerializer(serializers.HyperlinkedModelSerializer):
+class WarrantySerializer(serializers.ModelSerializer):
     class Meta:
         model = Warranty
         fields = '__all__'
 
 
-class WarrantyTypeSerializer(serializers.HyperlinkedModelSerializer):
+class WarrantyTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = WarrantyType
         fields = '__all__'
 
 
-class DeviceSerializer(serializers.HyperlinkedModelSerializer):
+class DeviceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Device
         fields = '__all__'
 
 
-class DeviceCategorySerializer(serializers.HyperlinkedModelSerializer):
+class DeviceCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = DeviceCategory
         fields = '__all__'
 
 
-class DeviceInNetSerializer(serializers.HyperlinkedModelSerializer):
+class DeviceInNetSerializer(serializers.ModelSerializer):
     class Meta:
         model = DeviceInNet
         fields = '__all__'
 
 
-class DeviceManufacturerSerializer(serializers.HyperlinkedModelSerializer):
+class DeviceManufacturerSerializer(serializers.ModelSerializer):
     class Meta:
         model = DeviceManufacturer
         fields = '__all__'
 
 
-class HardwareModelSerializer(serializers.HyperlinkedModelSerializer):
+class HardwareModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = HardwareModel
         fields = '__all__'

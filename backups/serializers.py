@@ -8,37 +8,37 @@ from .models import Notification
 from .models import NotificationType
 
 
-class BackupMethodSerializer(serializers.HyperlinkedModelSerializer):
+class BackupMethodSerializer(serializers.ModelSerializer):
     class Meta:
         model = BackupMethod
         fields = '__all__'
 
 
-class BackupSerializer(serializers.HyperlinkedModelSerializer):
+class BackupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Backup
         fields = '__all__'
 
 
-class TargetDeviceSerializer(serializers.HyperlinkedModelSerializer):
+class TargetDeviceSerializer(serializers.ModelSerializer):
     class Meta:
         model = TargetDevice
         fields = '__all__'
 
 
-class NotificationFromBackupSerializer(serializers.HyperlinkedModelSerializer):
+class NotificationFromBackupSerializer(serializers.ModelSerializer):
     class Meta:
         model = NotificationFromBackup
         fields = '__all__'
 
 
-class NotificationSerializer(serializers.HyperlinkedModelSerializer):
+class NotificationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Notification
         fields = '__all__'
 
 
-class NotificationTypeSerializer(serializers.HyperlinkedModelSerializer):
+class NotificationTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = NotificationType
         fields = '__all__'

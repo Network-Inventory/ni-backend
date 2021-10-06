@@ -6,25 +6,25 @@ from .models import LicenseWithUser
 from .models import LicenseWithComputer
 
 
-class UserLicenseSerializer(serializers.HyperlinkedModelSerializer):
+class UserLicenseSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserLicense
         fields = '__all__'
 
 
-class ComputerLicenseSerializer(serializers.HyperlinkedModelSerializer):
+class ComputerLicenseSerializer(serializers.ModelSerializer):
     class Meta:
         model = ComputerLicense
         fields = '__all__'
 
 
-class LicenseWithUserSerializer(serializers.HyperlinkedModelSerializer):
+class LicenseWithUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = LicenseWithUser
         fields = '__all__'
 
 
-class LicenseWithComputerSerializer(serializers.HyperlinkedModelSerializer):
+class LicenseWithComputerSerializer(serializers.ModelSerializer):
     class Meta:
         model = LicenseWithComputer
         fields = '__all__'
