@@ -24,7 +24,6 @@ class ComputerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Computer
         fields = '__all__'
-        depth = 1
 
 
 class ComputerCpuRelationSerializer(serializers.ModelSerializer):
