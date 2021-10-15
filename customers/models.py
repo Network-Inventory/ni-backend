@@ -7,8 +7,6 @@ class Owner(Company):
 
 
 class Customer(Company):
-    name = models.CharField(max_length=50)
-
     class Meta:
         ordering = ['name']
 
@@ -18,13 +16,6 @@ class Customer(Company):
     def get_absolute_url(self):
         from django.urls import reverse
         return reverse('customer', args=[str(self.id)])
-
-
-class DeviceManufacturer(Company):
-
-    class Meta:
-        ordering = ['name']
-        verbose_name_plural = "Device Manufacturers"
 
 
 class Location(models.Model):

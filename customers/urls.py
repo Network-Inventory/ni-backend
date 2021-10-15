@@ -6,5 +6,4 @@ from . import views
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'owners', views.OwnerViewSet)
 router.register(r'customers', views.CustomerViewSet)
-router.register(r'device-manufacturers', views.DeviceManufacturerViewSet)
 router.register(r'locations', views.LocationViewSet)
