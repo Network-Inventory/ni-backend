@@ -2,7 +2,7 @@ from django.db import models
 
 
 class HoursInDay(models.Model):
-    name = models.IntegerField()
+    value = models.IntegerField()
 
     def __str__(self):
         return str(self.name)
@@ -13,7 +13,7 @@ class HoursInDay(models.Model):
 
 
 class MinutesInHour(models.Model):
-    name = models.IntegerField()
+    value = models.IntegerField()
 
     def __str__(self):
         return str(self.name)
