@@ -5,19 +5,19 @@ class HoursInDay(models.Model):
     value = models.IntegerField()
 
     def __str__(self):
-        return str(self.name)
+        return str(self.value)
 
     class Meta:
         verbose_name_plural = "Hours"
-        ordering = ['name']
+        ordering = ['value']
 
 
 class MinutesInHour(models.Model):
     value = models.IntegerField()
 
     def __str__(self):
-        return str(self.name)
+        return str(self.value)
 
     class Meta:
         verbose_name_plural = "Minutes"
-        ordering = ['name']
+        ordering = ['value']

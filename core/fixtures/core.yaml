@@ -29,351 +29,351 @@
 
 - model: core.HoursInDay
   fields:
-    name: 0
+    value: 0
 - model: core.HoursInDay
   fields:
-    name: 1
+    value: 1
 - model: core.HoursInDay
   fields:
-    name: 2
+    value: 2
 - model: core.HoursInDay
   fields:
-    name: 3
+    value: 3
 - model: core.HoursInDay
   fields:
-    name: 4
+    value: 4
 - model: core.HoursInDay
   fields:
-    name: 5
+    value: 5
 - model: core.HoursInDay
   fields:
-    name: 6
+    value: 6
 - model: core.HoursInDay
   fields:
-    name: 7
+    value: 7
 - model: core.HoursInDay
   fields:
-    name: 8
+    value: 8
 - model: core.HoursInDay
   fields:
-    name: 9
+    value: 9
 - model: core.HoursInDay
   fields:
-    name: 10
+    value: 10
 - model: core.HoursInDay
   fields:
-    name: 11
+    value: 11
 - model: core.HoursInDay
   fields:
-    name: 12
+    value: 12
 - model: core.HoursInDay
   fields:
-    name: 13
+    value: 13
 - model: core.HoursInDay
   fields:
-    name: 14
+    value: 14
 - model: core.HoursInDay
   fields:
-    name: 15
+    value: 15
 - model: core.HoursInDay
   fields:
-    name: 16
+    value: 16
 - model: core.HoursInDay
   fields:
-    name: 17
+    value: 17
 - model: core.HoursInDay
   fields:
-    name: 18
+    value: 18
 - model: core.HoursInDay
   fields:
-    name: 19
+    value: 19
 - model: core.HoursInDay
   fields:
-    name: 20
+    value: 20
 - model: core.HoursInDay
   fields:
-    name: 21
+    value: 21
 - model: core.HoursInDay
   fields:
-    name: 22
+    value: 22
 - model: core.HoursInDay
   fields:
-    name: 23
+    value: 23
 
 - model: core.MinutesInHour
   fields:
-    name: 0
+    value: 0
 - model: core.MinutesInHour
   fields:
-    name: 1
+    value: 1
 - model: core.MinutesInHour
   fields:
-    name: 2
+    value: 2
 - model: core.MinutesInHour
   fields:
-    name: 3
+    value: 3
 - model: core.MinutesInHour
   fields:
-    name: 4
+    value: 4
 - model: core.MinutesInHour
   fields:
-    name: 5
+    value: 5
 - model: core.MinutesInHour
   fields:
-    name: 6
+    value: 6
 - model: core.MinutesInHour
   fields:
-    name: 7
+    value: 7
 - model: core.MinutesInHour
   fields:
-    name: 8
+    value: 8
 - model: core.MinutesInHour
   fields:
-    name: 9
+    value: 9
 - model: core.MinutesInHour
   fields:
-    name: 10
+    value: 10
 - model: core.MinutesInHour
   fields:
-    name: 11
+    value: 11
 - model: core.MinutesInHour
   fields:
-    name: 12
+    value: 12
 - model: core.MinutesInHour
   fields:
-    name: 13
+    value: 13
 - model: core.MinutesInHour
   fields:
-    name: 14
+    value: 14
 - model: core.MinutesInHour
   fields:
-    name: 15
+    value: 15
 - model: core.MinutesInHour
   fields:
-    name: 16
+    value: 16
 - model: core.MinutesInHour
   fields:
-    name: 17
+    value: 17
 - model: core.MinutesInHour
   fields:
-    name: 18
+    value: 18
 - model: core.MinutesInHour
   fields:
-    name: 19
+    value: 19
 - model: core.MinutesInHour
   fields:
-    name: 20
+    value: 20
 - model: core.MinutesInHour
   fields:
-    name: 21
+    value: 21
 - model: core.MinutesInHour
   fields:
-    name: 22
+    value: 22
 - model: core.MinutesInHour
   fields:
-    name: 23
+    value: 23
 - model: core.MinutesInHour
   fields:
-    name: 24
+    value: 24
 - model: core.MinutesInHour
   fields:
-    name: 25
+    value: 25
 - model: core.MinutesInHour
   fields:
-    name: 26
+    value: 26
 - model: core.MinutesInHour
   fields:
-    name: 27
+    value: 27
 - model: core.MinutesInHour
   fields:
-    name: 28
+    value: 28
 - model: core.MinutesInHour
   fields:
-    name: 29
+    value: 29
 - model: core.MinutesInHour
   fields:
-    name: 30
+    value: 30
 - model: core.MinutesInHour
   fields:
-    name: 31
+    value: 31
 - model: core.MinutesInHour
   fields:
-    name: 32
+    value: 32
 - model: core.MinutesInHour
   fields:
-    name: 33
+    value: 33
 - model: core.MinutesInHour
   fields:
-    name: 34
+    value: 34
 - model: core.MinutesInHour
   fields:
-    name: 35
+    value: 35
 - model: core.MinutesInHour
   fields:
-    name: 36
+    value: 36
 - model: core.MinutesInHour
   fields:
-    name: 37
+    value: 37
 - model: core.MinutesInHour
   fields:
-    name: 38
+    value: 38
 - model: core.MinutesInHour
   fields:
-    name: 39
+    value: 39
 - model: core.MinutesInHour
   fields:
-    name: 40
+    value: 40
 - model: core.MinutesInHour
   fields:
-    name: 41
+    value: 41
 - model: core.MinutesInHour
   fields:
-    name: 42
+    value: 42
 - model: core.MinutesInHour
   fields:
-    name: 43
+    value: 43
 - model: core.MinutesInHour
   fields:
-    name: 44
+    value: 44
 - model: core.MinutesInHour
   fields:
-    name: 45
+    value: 45
 - model: core.MinutesInHour
   fields:
-    name: 46
+    value: 46
 - model: core.MinutesInHour
   fields:
-    name: 47
+    value: 47
 - model: core.MinutesInHour
   fields:
-    name: 48
+    value: 48
 - model: core.MinutesInHour
   fields:
-    name: 49
+    value: 49
 - model: core.MinutesInHour
   fields:
-    name: 50
+    value: 50
 - model: core.MinutesInHour
   fields:
-    name: 51
+    value: 51
 - model: core.MinutesInHour
   fields:
-    name: 52
+    value: 52
 - model: core.MinutesInHour
   fields:
-    name: 53
+    value: 53
 - model: core.MinutesInHour
   fields:
-    name: 54
+    value: 54
 - model: core.MinutesInHour
   fields:
-    name: 55
+    value: 55
 - model: core.MinutesInHour
   fields:
-    name: 56
+    value: 56
 - model: core.MinutesInHour
   fields:
-    name: 57
+    value: 57
 - model: core.MinutesInHour
   fields:
-    name: 58
+    value: 58
 - model: core.MinutesInHour
   fields:
-    name: 59
+    value: 59
 
 - model: core.DayOfMonth
   fields:
-    name: 1
+    value: 1
 - model: core.DayOfMonth
   fields:
-    name: 2
+    value: 2
 - model: core.DayOfMonth
   fields:
-    name: 3
+    value: 3
 - model: core.DayOfMonth
   fields:
-    name: 4
+    value: 4
 - model: core.DayOfMonth
   fields:
-    name: 5
+    value: 5
 - model: core.DayOfMonth
   fields:
-    name: 6
+    value: 6
 - model: core.DayOfMonth
   fields:
-    name: 7
+    value: 7
 - model: core.DayOfMonth
   fields:
-    name: 8
+    value: 8
 - model: core.DayOfMonth
   fields:
-    name: 9
+    value: 9
 - model: core.DayOfMonth
   fields:
-    name: 10
+    value: 10
 - model: core.DayOfMonth
   fields:
-    name: 11
+    value: 11
 - model: core.DayOfMonth
   fields:
-    name: 12
+    value: 12
 - model: core.DayOfMonth
   fields:
-    name: 13
+    value: 13
 - model: core.DayOfMonth
   fields:
-    name: 14
+    value: 14
 - model: core.DayOfMonth
   fields:
-    name: 15
+    value: 15
 - model: core.DayOfMonth
   fields:
-    name: 16
+    value: 16
 - model: core.DayOfMonth
   fields:
-    name: 17
+    value: 17
 - model: core.DayOfMonth
   fields:
-    name: 18
+    value: 18
 - model: core.DayOfMonth
   fields:
-    name: 19
+    value: 19
 - model: core.DayOfMonth
   fields:
-    name: 20
+    value: 20
 - model: core.DayOfMonth
   fields:
-    name: 21
+    value: 21
 - model: core.DayOfMonth
   fields:
-    name: 22
+    value: 22
 - model: core.DayOfMonth
   fields:
-    name: 23
+    value: 23
 - model: core.DayOfMonth
   fields:
-    name: 24
+    value: 24
 - model: core.DayOfMonth
   fields:
-    name: 25
+    value: 25
 - model: core.DayOfMonth
   fields:
-    name: 26
+    value: 26
 - model: core.DayOfMonth
   fields:
-    name: 27
+    value: 27
 - model: core.DayOfMonth
   fields:
-    name: 28
+    value: 28
 - model: core.DayOfMonth
   fields:
-    name: 29
+    value: 29
 - model: core.DayOfMonth
   fields:
-    name: 30
+    value: 30
 - model: core.DayOfMonth
   fields:
-    name: 31
+    value: 31
 
 - model: core.Month
   fields:

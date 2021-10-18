@@ -13,14 +13,14 @@ class Weekday(models.Model):
 
 
 class DayOfMonth(models.Model):
-    name = models.IntegerField()
+    value = models.IntegerField()
 
     def __str__(self):
-        return str(self.name)
+        return str(self.value)
 
     class Meta:
         verbose_name_plural = "Days of Month"
-        ordering = ['name']
+        ordering = ['value']
 
 
 class Month(models.Model):
