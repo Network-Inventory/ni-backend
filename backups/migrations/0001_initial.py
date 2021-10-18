@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('source_path', models.CharField(blank=True, max_length=200)),
                 ('exec_time', models.TimeField(blank=True, null=True)),
                 ('computer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='source_computer', to='computers.computer')),
-                ('exec_days', models.ManyToManyField(blank=True, to='core.Weekday')),
+                ('weekdays', models.ManyToManyField(blank=True, to='core.Weekday')),
             ],
             options={
                 'ordering': ['name'],
